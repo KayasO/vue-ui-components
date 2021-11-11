@@ -9492,7 +9492,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"prettier@npm:^1.18.2 || ^2.0.0":
+"prettier@npm:^1.18.2 || ^2.0.0, prettier@npm:^2.4.1":
   version: 2.4.1
   resolution: "prettier@npm:2.4.1"
   bin:
@@ -11793,6 +11793,7 @@ __metadata:
     eslint: ^6.7.2
     eslint-plugin-import: ^2.20.2
     eslint-plugin-vue: ^7.0.0
+    prettier: ^2.4.1
     vue: ^3.0.0
   languageName: unknown
   linkType: soft
