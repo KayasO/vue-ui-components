@@ -1,15 +1,14 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png" />
-  <Counter />
+  <BookList />
 </template>
 
 <script>
-import Counter from './components/Counter.vue';
+import BookList from './components/BookList.vue';
 
 export default {
   name: 'App',
   components: {
-    Counter,
+    BookList,
   },
 };
 </script>
