@@ -5,6 +5,7 @@
       <li v-for="book in books" :key="book.title">
         <h3>{{ book.author }}</h3>
         <p>{{ book.title }}</p>
+        <img :src="book.img" :alt="book.title" />
       </li>
     </ul>
   </div>
