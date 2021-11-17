@@ -1,14 +1,14 @@
 <template>
-  <BookList />
+  <Modal />
 </template>
 
 <script>
-import BookList from './components/BookList.vue';
+import Modal from './components/Modal.vue';
 
 export default {
   name: 'App',
   components: {
-    BookList,
+    Modal,
   },
 };
 </script>
