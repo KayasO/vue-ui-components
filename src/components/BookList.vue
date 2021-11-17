@@ -7,7 +7,12 @@
     </button>
 
     <ul v-if="showBooks">
-      <li v-for="book in books" :key="book.title" :class="{ fav: book.isFav }">
+      <li
+        v-for="book in books"
+        :key="book.title"
+        :class="{ fav: book.isFav }"
+        @click="toggleFav(book)"
+      >
         <h3>{{ book.author }}</h3>
         <p>{{ book.title }}</p>
         <img :src="book.img" :alt="book.title" />
@@ -51,6 +56,9 @@ export default {
   methods: {
     toggleShowBooks() {
       this.showBooks = !this.showBooks;
+    },
+    toggleFav(book) {
+      book.isFav = !book.isFav;
     },
   },
 };
