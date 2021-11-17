@@ -12,27 +12,31 @@
 </template>
 
 <script>
+import image1 from '../assets/book-covers/1.jpg';
+import image2 from '../assets/book-covers/2.jpg';
+import image3 from '../assets/book-covers/3.jpg';
+
 export default {
-  name: 'Counter',
+  name: 'BookList',
   data() {
     return {
       books: [
         {
           author: 'Test1',
           title: 'Some title 1',
-          img: '../assets/book-covers/1.jpg',
+          img: image1,
           isFav: true,
         },
         {
           author: 'Test2',
           title: 'Some title 2',
-          img: '../assets/book-covers/2.jpg',
+          img: image2,
           isFav: false,
         },
         {
           author: 'Test3',
           title: 'Some title 3',
-          img: '../assets/book-covers/3.jpg',
+          img: image3,
           isFav: false,
         },
       ],
