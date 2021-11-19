@@ -1,8 +1,5 @@
 <template>
-  <Modal
-    title="Some title for this content!"
-    content="This is some lorem ipsum like filler content for this property"
-  />
+  <Modal :title="title" :content="content" />
 </template>
 
 <script>
@@ -12,6 +9,12 @@ export default {
   name: 'App',
   components: {
     Modal,
+  },
+  data() {
+    return {
+      title: 'Some title for this content!',
+      content: 'This is some lorem ipsum like filler content for this property',
+    };
   },
 };
 </script>
