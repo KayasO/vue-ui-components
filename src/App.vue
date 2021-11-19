@@ -1,5 +1,8 @@
 <template>
-  <Modal />
+  <Modal
+    title="Some title for this content!"
+    content="This is some lorem ipsum like filler content for this property"
+  />
 </template>
 
 <script>
