@@ -1,15 +1,13 @@
 <template>
   <div class="backdrop" @click.self="closeModal()">
     <div class="modal">
-      <h1>{{ title }}</h1>
-      <p>{{ content }}</p>
+      <slot />
     </div>
   </div>
 </template>
 
 <script>
 export default {
-  props: ['title', 'content'],
   methods: {
     closeModal() {
       this.$emit('closeModal');
@@ -23,7 +21,7 @@ h1 {
   color: coral;
 }
 .modal {
-  width: 400px;
+  max-width: 600px;
   padding: 20px;
   margin: 100px auto;
   background: white;

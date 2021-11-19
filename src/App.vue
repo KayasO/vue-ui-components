@@ -1,7 +1,11 @@
 <template>
   <button @click="toggleShowModal()">Show Modal</button>
   <div v-if="showModal">
-    <Modal :title="title" :content="content" @closeModal="toggleShowModal()" />
+    <Modal @closeModal="toggleShowModal()">
+      <h1>{{ title }}</h1>
+      <hr />
+      <p>{{ content }}</p>
+    </Modal>
   </div>
 </template>
 
@@ -36,5 +40,8 @@ export default {
   text-align: center;
   color: #2c3e50;
   margin-top: 60px;
+}
+.modal p {
+  padding: 1.5em 0;
 }
 </style>
