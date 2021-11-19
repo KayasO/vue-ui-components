@@ -1,5 +1,8 @@
 <template>
-  <Modal :title="title" :content="content" />
+  <button @click="toggleShowModal()">Show Modal</button>
+  <div v-if="showModal">
+    <Modal :title="title" :content="content" @closeModal="toggleShowModal()" />
+  </div>
 </template>
 
 <script>
@@ -12,9 +15,15 @@ export default {
   },
   data() {
     return {
+      showModal: false,
       title: 'Some title for this content!',
       content: 'This is some lorem ipsum like filler content for this property',
     };
+  },
+  methods: {
+    toggleShowModal() {
+      this.showModal = !this.showModal;
+    },
   },
 };
 </script>
